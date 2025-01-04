@@ -1,0 +1,81 @@
+# Big O Notation
+Big O Notation Overview & Notes
+
+Day 3 of 2025, this is my Data Structures Journal Entry where I will contribute my notes
+for Big O Notation.
+
+January 3, 2025
+
+Big O Notation: Time Complexities
+
+1. O(1) Constant Time:
+- The execution time does not depend on the input size.
+Examples:
+- accessing an element in an array by index
+- pushing or popping from a stack or queue
+- checking if a number is even or odd
+- hash table lookups (average case)
+- accessing elements in a dictionary by key
+
+2. O(log n) Logarithmic Time:
+- The execution time grows logarithmically with the input size.
+- Common in algorithms halving a problem size repeatedly (divide and conquer).
+Examples:
+- binary search or a sorted array
+- tree-based operations like searching in a balanced binary search tree,
+such as AVL, Red-Black trees
+- efficient algorithms for finding the greatest common divisor, like Euclid’s algorithm
+
+3. O(n) Linear Time:
+- The execution time grows linearly with the input size.
+- Common in algorithms that must look at every element of the input once, single pass.
+Examples:
+- iterating through an array, list, or string
+- summing all elements in an array
+- finding the maximum or minimum element in an unsorted array
+- breadth-first search (BFS) in graphs or trees
+
+4. O(nlogn) Linearithmic Time:
+- The execution time grows faster than linear time, but slower than quadratic time.
+- Common in "divide and conquer" sorting algorithms.
+- Sorting large data sets efficiently.
+Examples:
+- merge sort
+- quick sort (best and average case)
+- heap sort
+- fast fourier transform (FFT)
+
+5. O(n^2) Quadratic Time:
+- The execution time grows quadratically with the input size.
+- Common in algorithms with nested loops iterating over the input.
+- Comparing all pairs of elements in a data set.
+Examples:
+- bubble sort
+- selection sort
+- insertion sort
+- Floyd-Warshall algorithm for shortest paths in weighted graphs
+
+6. O(n^3) Cubic Time:
+- The execution time grows cubically with the input size.
+- Common in algorithms with three nested loops.
+- Processing triplets in a data set (3D problems)
+Examples:
+- matrix multiplication (naive approach)
+- checking if three points in a 3D space are collinear
+
+7. O(2^n) Exponential Time:
+- The execution time doubles with each additional input element.
+- Often seen in recursive algorithms solving problems with overlapping subproblems.
+Examples:
+- solving the traveling salesman problem (brute force)
+- recursive solutions to the Fibonacci sequence
+- generating all subsets of a set
+- backtracking algorithms, N-Queens problem
+
+8. O(n!) Factorial Time:
+- The execution time grows factorially with the input size.
+- The worst time complexity, common in exhaustive search problems.
+Examples:
+- considering all permutations of a set
+- brute-force solutions to the traveling salesman problem
+- generating all permutations of a string or array

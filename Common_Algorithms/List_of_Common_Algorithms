@@ -1,0 +1,114 @@
+# Big O Notation
+Big O Notation Overview & Notes
+
+Day 17 of 2025, this is my Data Structures Journal Entry where I will contribute my notes
+for Big O Notation.
+
+January 17, 2025
+
+Common LeetCode Algorithms:
+
+Notes:
+
+1. Sliding Window:
+- When to Use: Problems involving substrings, subarrays, or continuous data where you 
+need to find a maximum, minimum, or a specific condition.
+- Examples: Longest substring without repeating characters, Maximum sum of a subarray.
+- Key Idea: 
+- Use two pointers (start and end) to represent the current window.
+- Expand the window by moving end, and contract it by moving start when conditions aren't met.
+
+2. Two Pointers:
+- When to Use: Sorted arrays, or when comparing elements from the beginning and end of a 
+data structure.
+- Examples: Two sum (sorted array), 3Sum, Container with Most Water.
+- Key Idea:
+- Use two pointers, one starting from the left and one from the right.
+- Move the pointers inward based on the problem’s logic (e.g., to find a target sum).
+
+3. Binary Search:
+- When to Use: Problems with sorted input or when you need to optimize search in a range.
+- Examples: Search in Rotated Sorted Array, Find Peak Element.
+- Key Idea:
+- Repeatedly divide the search space in half until the target is found.
+- Maintain low, high, and mid pointers, and decide which half to explore.
+
+4. Hash Map/Dictionary:
+- When to Use: Problems where you need quick lookups, counting, or detecting duplicates.
+- Examples: Two sum, Subarray Sum Equals K, Group Anagrams.
+- Key Idea:
+- Use a hash map to store key-value pairs for quick access.
+- Often paired with iteration to solve problems in O(n) time.
+
+5. Greedy Algorithms:
+- When to Use: Optimization problems where local choices lead to a global solution.
+- Examples: Jump Game, Partition Labels, Interval Scheduling.
+- Key Idea:
+- Always pick the current best (greedy) option based on the problem’s constraints.
+- Verify that a greedy approach works by proving its correctness.
+
+6. Dynamic Programming (DP):
+- When to Use: Problems with overlapping subproblems or optimal substructure (e.g., Fibonacci).
+- Examples: Climbing Stairs, Longest Increasing Subsequence, Knapsack Problem.
+- Key Idea:
+- Break the problem into smaller subproblems and store their solutions.
+- Use a table (or recursion with memoization) to avoid recomputation.
+
+7. Depth-First Search (DFS):
+- When to Use: Problems involving graphs, trees, or backtracking.
+- Examples: Word Search, Number of Islands.
+- Key Idea:
+- Explore as far as possible along each branch before backtracking.
+- Often implemented using recursion or a stack.
+
+8. Breadth-First Search (BFS):
+- When to Use: Problems involving the shortest path or levels in graphs/trees.
+- Examples: Minimum Depth of Binary Tree, Word Ladder.
+- Key Idea:
+- Explore all neighbors at the current level before moving to the next level.
+- Use a queue to manage the frontier.
+
+9. Backtracking:
+- When to Use: Problems requiring all combinations, permutations, or subsets.
+- Examples: N-Queens, Subsets, Combination Sum.
+- Key Idea:
+- Explore all possibilities and backtrack when a condition isn’t met.
+- Use recursion to explore choices, and undo changes as you backtrack.
+
+10. Union-Find (Disjoint Set):
+- When to Use: Problems about connected components or relationships.
+- Examples: Graph Valid Tree, Number of Connected Components.
+- Key Idea:
+- Use a parent array to keep track of connected components.
+- Implement union and find operations with path compression for efficiency.
+
+11. Prefix Sum:
+- When to Use: Subarray problems involving sums or ranges.
+- Examples: Subarray Sum Equals K, Range Sum Query.
+- Key Idea:
+- Precompute cumulative sums so you can quickly query subarray sums.
+
+12. Bit Manipulation:
+- When to Use: Problems involving binary representations or toggling bits.
+- Examples: Single Number, Subsets (using bitmask).
+- Key Idea:
+- Use bitwise operators (AND, OR, XOR, SHIFT) to manipulate bits.
+
+13. Monotonic Stack/Queue:
+- When to Use: Problems involving the next greater element or maintaining a specific order.
+- Examples: Next Greater Element, Trapping Rain Water.
+- Key Idea:
+- Use a stack/queue to maintain elements in a monotonic order.
+- Push and pop elements based on conditions.
+
+14. Topological Sorting:
+- When to Use: Directed acyclic graphs (DAGs) or dependency problems.
+- Examples: Course Schedule, Alien Dictionary.
+- Key Idea:
+- Use DFS or Kahn’s algorithm to order nodes based on dependencies.
+
+15. Mathematical Patterns:
+- When to Use: Number theory or combinatorics problems.
+- Examples: Permutation in String, Happy Number.
+- Key Idea:
+- Apply formulas, modular arithmetic, or combinatorial principles.

@@ -8,6 +8,11 @@ January 3, 2025
 
 Big O Notation: Time Complexities
 
+Notes: 
+
+- a lot of times Big O is explained as a perform tuning metric, but really it’s about scalability
+- Big O notation does not measure the efficiency of an algorithm, it only measures the CHANGE in performance as the data set increases in size
+
 1. O(1) Constant Time:
 - The execution time does not depend on the input size.
 Examples:

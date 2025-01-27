@@ -1,6 +1,6 @@
 **Binary Search Algorithm**
 
-Binary Search is a powerful searching algorithm used to find the position of a target element in a sorted array or list. The algorithm repeatedly divides the search interval in half, eliminating half of the remaining elements in each step. This approach works only on sorted data, achieving a time complexity of O(logn).
+Binary Search is a powerful searching algorithm used to find the position of a target element in a sorted array or list. The algorithm repeatedly divides the search interval in half, eliminating half of the remaining elements in each step. This approach works only on sorted data, achieving a time complexity of O(log n).
 
 The basic idea is to compare the middle element of the current range to the target:
 

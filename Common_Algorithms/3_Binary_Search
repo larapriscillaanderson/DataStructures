@@ -19,6 +19,7 @@ Search Variations:
 - 35. Search Insert Position
 - 69. Sqrt(x)
 - 162. Find Peak Element
+- 74. Search a 2D Matrix
 
 Two-pointer/Binary Search Mix:
 - 33. Search in Rotated Sorted Array
@@ -62,6 +63,28 @@ If nums[mid] < nums[mid+1], move the search to the right half.
 
 Some problems ask for the first or last occurrence of a target in a sorted array.
 Modify the algorithm to track the leftmost or rightmost index.
+
+6. Searching 2D Matrices and Beyond:
+
+When dealing with a sorted 2D matrix where:
+Each row is sorted in non-decreasing order.
+
+Example:
+The first element of each row is greater than the last element of the previous row.
+The matrix can be flattened conceptually into a 1D sorted list.
+We can apply binary search while treating indices as if they belong to a 1D array.
+
+Tricky modification: (using coordinate system) 
+
+Convert the middle index to a row and column:
+- row = mid // num_cols
+- col = mid % num_cols
+
+If matrix[row][col] == target, return True.
+
+If matrix[row][col] < target, search the right half.
+
+Otherwise, search the left half.
 
 **Tips for Binary Search**
 

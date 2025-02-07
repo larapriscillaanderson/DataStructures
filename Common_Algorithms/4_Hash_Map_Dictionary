@@ -30,3 +30,25 @@ More Advanced Hash Map Applications:
 49. Group Anagrams (Use a hash map with sorted strings or frequency counts)
 347. Top K Frequent Elements (Use a hash map to store frequency counts, then sort)
 560. Subarray Sum Equals K (Use a prefix sum hash map to optimize searching)
+
+**Key Modifications Across Problems**
+
+1. Storing Indices Instead of Values (e.g., Two Sum)
+
+Instead of storing numbers, store their indices for quick lookup.
+
+2. Using Hash Maps for Frequency Counting (e.g., Valid Anagram)
+
+Track how often elements appear in an input.
+
+3. Prefix Sum Optimization (e.g., Subarray Sum Equals K)
+
+Store cumulative sums in a hash map for fast lookups.
+
+4. Bucket Sorting Using Hash Maps (e.g., Top K Frequent Elements)
+
+Store element frequencies and use a bucket approach to sort.
+
+5. Storing Nested Data (e.g., Group Anagrams)
+
+Use a hash map where each key stores a list of items that share common properties.

@@ -88,6 +88,6 @@ Otherwise, search the left half.
 
 **Tips for Binary Search**
 
-- Always double-check the loop conditions (while left <= right or while left < right).
-- Pay attention to integer overflow in mid = (left + right) // 2 (rare in Python but common in other languages).
-- Clearly define what the algorithm should return (e.g., the exact target index, an insert position, or a boolean).
+✅ Always double-check the loop conditions (while left <= right or while left < right).
+✅ Pay attention to integer overflow in mid = (left + right) // 2 (rare in Python but common in other languages).
+✅ Clearly define what the algorithm should return (e.g., the exact target index, an insert position, or a boolean).

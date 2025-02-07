@@ -1,1 +1,18 @@
-placeholder
+**Hash Map Search Algorithm**
+
+A Hash Map (or Hash Table) is a data structure that allows for efficient key-value pair storage and retrieval. It uses a hashing function to compute an index (or "hash") for each key, storing values in an array-like structure. This enables average-case O(1) time complexity for lookups, insertions, and deletions.
+
+The basic idea:
+
+1. A key-value pair is inserted into the hash map.
+2. The hash function computes an index for the key.
+3. The value is stored at that index.
+4. When searching for a key, the same hash function is used to find the index, retrieving the value quickly.
+
+**Handling Collisions**
+
+Since multiple keys might hash to the same index, collision handling is necessary. Common techniques include:
+
+Chaining: Store multiple key-value pairs in a linked list at the same index.
+Open Addressing (Linear Probing / Quadratic Probing): Find the next available slot in the array.
+Double Hashing: Use a secondary hash function to determine the next slot.

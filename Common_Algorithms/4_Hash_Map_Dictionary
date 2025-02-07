@@ -16,3 +16,17 @@ Since multiple keys might hash to the same index, collision handling is necessar
 Chaining: Store multiple key-value pairs in a linked list at the same index.
 Open Addressing (Linear Probing / Quadratic Probing): Find the next available slot in the array.
 Double Hashing: Use a secondary hash function to determine the next slot.
+
+**LeetCode Problem Examples**
+
+Here are a few problems where the hash map algorithm can be applied:
+
+Basic Hash Map Usage:
+1. Two Sum (Use a hash map to store seen numbers and their indices)
+242. Valid Anagram (Use a hash map to count character frequencies)
+383. Ransom Note (Check if one string can be formed using letter counts from another)
+
+More Advanced Hash Map Applications:
+49. Group Anagrams (Use a hash map with sorted strings or frequency counts)
+347. Top K Frequent Elements (Use a hash map to store frequency counts, then sort)
+560. Subarray Sum Equals K (Use a prefix sum hash map to optimize searching)

@@ -26,4 +26,37 @@ This allows the algorithm to achieve O(n) time complexity for many problems, whe
 2. Dynamic-size Window:
     - The size of the window adjusts dynamically depending on certain conditions.
     - Example: Longest substring without repeating characters.
-    
+
+**LeetCode Problem Examples**
+
+Here are a few problems where the hash map algorithm can be applied:
+
+# placeholder
+
+**Key Modifications Across Problems**
+
+1. Fixed vs Dynamic Window Size
+
+- Some problems require a fixed-size window (e.g., maximum sum of a subarray of size k), while others require a window whose size adjusts based on conditions (e.g., longest substring without repeating characters).
+
+2. Using Hash Maps to Track Elements
+
+- In many sliding window problems (like finding the longest substring without repeating characters), hash maps are used to track element frequencies within the window.
+
+3. Tracking Maximum/Minimum/Count
+
+- Sliding window problems often require you to keep track of the maximum or minimum value within the current window. Efficient tracking can be done with additional data structures like deques or priority queues.
+
+4. Expanding and Contracting the Window
+
+- Expanding the window (by moving the right pointer) and contracting it (by moving the left pointer) based on specific conditions (e.g., exceeding a sum or encountering a duplicate).
+
+**Tips for Using Sliding Window**
+
+✅ Determine if the problem involves a contiguous range of elements: Sliding window works best when the problem revolves around subarrays or substrings.
+
+✅ Track conditions dynamically: As the window expands or contracts, make sure you update the necessary information (e.g., sum, frequency counts, maximum/minimum).
+
+✅ Optimize with hash maps or deques: For problems involving frequency counts or order tracking (like substrings), consider using hash maps, and for tracking max/min values efficiently, consider using deques.
+
+✅ Use a double-pointer approach for efficiency: The two-pointer technique ensures that each element is processed once, achieving O(n) time complexity.

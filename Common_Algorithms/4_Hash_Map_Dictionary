@@ -56,6 +56,9 @@ Use a hash map where each key stores a list of items that share common propertie
 **Tips for Using Hash Maps**
 
 ✅ Choose an efficient hash function to minimize collisions.
+
 ✅ Understand the difference between hash maps and ordered maps (some implementations maintain key order).
+
 ✅ Be mindful of space complexity, as hash maps can use extra memory.
+
 ✅ When iterating, use .items() (Python) to access both keys and values efficiently.

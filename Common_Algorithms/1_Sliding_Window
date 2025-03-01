@@ -31,7 +31,21 @@ This allows the algorithm to achieve O(n) time complexity for many problems, whe
 
 Here are a few problems where the hash map algorithm can be applied:
 
-# placeholder
+Basic Sliding Window Problems:
+3. Longest Substring Without Repeating Characters
+- Approach: Use a dynamic sliding window with two pointers (left and right). Move the right pointer to expand the window, and the left pointer to shrink the window when duplicate characters are found.
+239. Maximum Sum of Subarray of Size K
+- Approach: Use a fixed-size sliding window of size k. Calculate the sum of the first window, and slide the window to the right while adding the next element and removing the element that goes out of the window.
+209. Minimum Size Subarray Sum
+- Approach: Use a dynamic sliding window to expand the window by adding elements to the sum, and contract the window when the sum becomes greater than or equal to the target.
+
+More Advanced Sliding Window Problems:
+567. Permutation in String
+- Approach: Use a sliding window of size equal to the length of the pattern. Track the frequency of characters in both the window and the pattern using a hash map or array.
+159. Longest Substring with At Most Two Distinct Characters
+- Approach: Use a dynamic sliding window to ensure that no more than two distinct characters exist in the current window. Expand and contract the window as needed.
+30. Substring with Concatenation of All Words
+- Approach: Use a sliding window to track the position of substrings that match the concatenation of all words in the list.
 
 **Key Modifications Across Problems**
 

@@ -1,1 +1,29 @@
-placeholder
+**Sliding Window Algorithm**
+
+A Sliding Window is a technique used to solve problems involving subarrays, substrings, or contiguous data in an efficient manner. Instead of recalculating results for every possible window in the data, it moves a window over the input to find the desired result in linear time.
+
+The basic idea:
+
+1. Two Pointers: We use two pointers to represent a window. The first pointer marks the start of the window, and the second pointer marks the end.
+2. Expand the Window: The window is expanded by moving the right pointer (end) forward.
+3. Shrink the Window: The window is contracted by moving the left pointer (start) forward when certain conditions are met.
+4. Update as You Go: The key idea is to adjust the window dynamically as you traverse through the input array or string, ensuring optimal performance.
+
+This allows the algorithm to achieve O(n) time complexity for many problems, where n is the size of the input.
+
+**When to Use Sliding Window**
+
+- Problems involving subarrays, substrings, or continuous data.
+- Problems that involve finding a maximum or minimum of a subarray, or other conditions like sums, averages, etc.
+- Often used in optimization problems where you need to maximize or minimize a condition over a range of data.
+
+**Types of Sliding Window Techniques**
+
+1. Fixed-size Window:
+    - The size of the window is pre-determined, and the window slides over the array or string.
+    - Example: Maximum sum of a subarray of size k.
+
+2. Dynamic-size Window:
+    - The size of the window adjusts dynamically depending on certain conditions.
+    - Example: Longest substring without repeating characters.
+    

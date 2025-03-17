@@ -22,7 +22,7 @@ class Solution(object):
         words = s.split()
         
         # reverse each word using slicing
-        reversed_words = [word[::-1] for word in words]  # ✅ Fixed syntax
+        reversed_words = [word[::-1] for word in words]
         
         # join the reversed words back with spaces
         result = ' '.join(reversed_words)
